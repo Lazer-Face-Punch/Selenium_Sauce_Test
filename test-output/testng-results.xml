@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="12142" started-at="2015-02-14T07:28:05Z" finished-at="2015-02-14T07:28:17Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="12142" started-at="2015-02-14T07:28:05Z" finished-at="2015-02-14T07:28:17Z">
+      <class name="com.baird.bairdWarnerMainTests.TestAccountLogin">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.baird.bairdWarnerMainTests.TestAccountLogin@4cdbe50f]" name="setup" is-config="true" duration-ms="9963" started-at="2015-02-14T00:28:05Z" finished-at="2015-02-14T00:28:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="test_Account_Login_Page_Appear_Correct()[pri:0, instance:com.baird.bairdWarnerMainTests.TestAccountLogin@4cdbe50f]" name="test_Account_Login_Page_Appear_Correct" duration-ms="1816" started-at="2015-02-14T00:28:15Z" finished-at="2015-02-14T00:28:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Account_Login_Page_Appear_Correct -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.baird.bairdWarnerMainTests.TestAccountLogin@4cdbe50f]" name="closebrowser" is-config="true" duration-ms="353" started-at="2015-02-14T00:28:17Z" finished-at="2015-02-14T00:28:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- com.baird.bairdWarnerMainTests.TestAccountLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
