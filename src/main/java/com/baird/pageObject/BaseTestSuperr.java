@@ -14,12 +14,16 @@ public abstract class BaseTestSuperr {
 
 	/* protected String baseUrl = "http://www.bairdwarner.com"; */
 
-	@BeforeMethod
-	public void setUpBeforeTestClass() {
-		driver = new FirefoxDriver();
+
+@BeforeMethod
+	public void setUpBeforeTestClass(){
+	Driver.Initialize();
+}
+			
+		/*driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("http://www.bairdwarner.com");
-	}
+		driver.get("http://www.bairdwarner.com");*/
+	
 
 	/*
 	 * @BeforeTest public void setUp() throws Exception{ driver = new
@@ -52,6 +56,6 @@ public abstract class BaseTestSuperr {
 	@AfterMethod
 	public void tearDown() throws Exception {
 		System.out.println("\nBrower close");
-		driver.quit();
+		Driver.Instance.quit();
 	}
 }
