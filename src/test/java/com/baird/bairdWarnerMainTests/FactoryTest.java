@@ -1,12 +1,9 @@
 package com.baird.bairdWarnerMainTests;
 
 
-import java.util.concurrent.TimeUnit;
-
 import junit.framework.TestCase;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;

@@ -1,4 +1,4 @@
-package pageFactoryObject;
+package com.baird.bairdWarnerMainTests;
 
 
 /*import org.openqa.selenium.WebDriver;*/
@@ -6,11 +6,13 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.baird.pageObject.AccountLoginTest;
+import com.baird.pageObject.BaseTestSuperr;
+import com.baird.pageObject.Driver;
 import com.baird.pageObject.SauceBase;
 
 
 
- public class BaseTest extends SauceBase{
+ public class BaseTest extends BaseTestSuperr{
 		/* WebDriver driver; */
 		/* AccountLoginTest objLogin; */
 		/* BaseTestSub objSetup; */
@@ -18,7 +20,8 @@ import com.baird.pageObject.SauceBase;
 		@Test
 		public void test_Account_Login_Page_Appear_Correct() throws Exception {
 			// Create login page object
-			objLogin = new AccountLoginTest(driver);
+			objLogin = new AccountLoginTest(Driver.Instance);
+			
 
 			objLogin.loginToBairdAccount("brenden@activewebsite.com", "active");
 			
