@@ -15,7 +15,7 @@ import com.baird.pageObject.SauceBase;
 		/* AccountLoginTest objLogin; */
 		/* BaseTestSub objSetup; */
 
-		@Testt
+		@Test
 		public void test_Account_Login_Page_Appear_Correct() throws Exception {
 			// Create login page object
 			objLogin = new AccountLoginTest(driver);
