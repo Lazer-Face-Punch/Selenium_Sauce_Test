@@ -9,9 +9,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
- public class AccountLoginTest {
-	
-	/*WebDriver driver;*/
+ public class SauceAccountLoginTest{
+	 /*public TestProperties testProperties;*/
+	WebDriver driver;
 	By loginPopup = By.linkText("Log In");
 	/*By popupBox = By.id("account_login_form");*/
 	By email = By.cssSelector("div.fancybox-inner > #account_login_form > #account_login_ajax > fieldset.clearfix > div.form-group > #wua-email");
@@ -26,11 +26,21 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  
 
 	
-public AccountLoginTest(WebDriver driver){ 
-	/*this.driver = driver;*/
+public SauceAccountLoginTest(WebDriver driver){
+	
+	this.driver = driver;
 	PageFactory.initElements(driver, this);
-	Driver.Instance.get("http://www.bairdwarner.com");
+	/*driver.get("http://www.bairdwarner.com/")*/
+	/*driver.get(this.testProperties.getDomain() + "/")*/;
 }
+
+/*@DataProvider(name = "hardCodedBrowsers", parallel = true)
+public static Object[][] sauceBrowserDataProvider(Method testMethod) {
+    return new Object[][]{
+            new Object[]{"internet explorer", "11", "Windows 8.1"},
+            new Object[]{"safari", "6", "OSX 10.8"},
+    };
+}*/
 
 /*public void setUpBeforeTestClass(){
 	 
@@ -45,27 +55,27 @@ public AccountLoginTest(WebDriver driver){
 
 //Open Login page popup
 public void clickLoginPopup(){
-	Driver.Instance.findElement(loginPopup).click();
+	driver.findElement(loginPopup).click();
 }
 
 
 //Set user name into Text Box
 public void setUserName(String strUserName){
-	Driver.Instance.findElement(email).sendKeys(strUserName);
+	driver.findElement(email).sendKeys(strUserName);
 }
 
 //Set Password
 public void setPassword(String strPassword){
-	Driver.Instance.findElement(password).sendKeys(strPassword);
+	driver.findElement(password).sendKeys(strPassword);
 }
 //Click Login Button
 public void clickLogin(){
-	Driver.Instance.findElement(login).click();
+	driver.findElement(login).click();
 }
 
 //Verify logged in Welcome/Name
 public String getLoginWelcome(){
-	new WebDriverWait(Driver.Instance, 15)
+	new WebDriverWait(driver, 15)
 	.until(ExpectedConditions.visibilityOf(welcomeText));
 	return welcomeText.getText();
 }

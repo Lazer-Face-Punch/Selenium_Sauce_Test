@@ -18,8 +18,14 @@ public class Driver {
 		Instance = instance;
 	}
 
-	public static void Initialize(){
+	public static void Initialize() throws Exception{
 		Instance = new FirefoxDriver();
 		Instance.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
+	
+	public static void tearDown() throws Exception{
+		System.out.println("\nBrowser close");
+		Driver.Instance.quit();
+	}
 }
+

@@ -16,7 +16,8 @@ public abstract class BaseTestSuperr {
 
 
 @BeforeMethod
-	public void setUpBeforeTestClass(){
+	public void setUpBeforeTestClass()throws Exception{
+	
 	Driver.Initialize();
 }
 			
@@ -54,8 +55,7 @@ public abstract class BaseTestSuperr {
 	 */
 
 	@AfterMethod
-	public void tearDown() throws Exception {
-		System.out.println("\nBrower close");
-		Driver.Instance.quit();
+	public void tearDownAfterTestMethod() throws Exception {
+		Driver.tearDown();
 	}
 }

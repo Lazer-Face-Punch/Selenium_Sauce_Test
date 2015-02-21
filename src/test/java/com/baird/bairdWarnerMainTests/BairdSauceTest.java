@@ -1,22 +1,29 @@
 package com.baird.bairdWarnerMainTests;
 
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.baird.pageObject.AccountLoginTest;
-import com.baird.pageObject.SauceBase;
+import com.baird.pageObject.SauceAccountLoginTest;
+import com.baird.pageObject.SauceSuper;
 
 
 
- public class BairdSauceTest extends SauceBase{
-		/* WebDriver driver; */
-		/* AccountLoginTest objLogin; */
+ public class BairdSauceTest extends SauceSuper{
+		/* WebDriver driver; 
+		 SauceAccountLoginTest objLogin;*/ 
 		/* BaseTestSub objSetup; */
+	 
+	 
+	 
 
-		@Test
+		@Test(/*dataProvider = "hardCodedBrowsers", dataProviderClass = com.baird.pageObject.Sauce.class*/)
 		public void test_Account_Login_Page_Appear_Correct() throws Exception {
+			
 			// Create login page object
-			objLogin = new AccountLoginTest(driver);
+			objLogin = new SauceAccountLoginTest(driver);
 
 			objLogin.loginToBairdAccount("brenden@activewebsite.com", "active");
 			
@@ -26,5 +33,10 @@ import com.baird.pageObject.SauceBase;
 			Assert.assertTrue(loginWelcomeTitle.equals("Welcome, brenden thornsberry"));
 
 		}
+		
+		/*@AfterMethod
+		public void tearDownAfterTestClass()throws Exception{
+	Sauce.tearDown();
+		}*/
 
 	}

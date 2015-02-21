@@ -2,24 +2,31 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13184" started-at="2015-02-17T00:43:10Z" finished-at="2015-02-17T00:43:24Z">
+  <suite name="Default suite" duration-ms="21486" started-at="2015-02-21T07:44:39Z" finished-at="2015-02-21T07:45:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13184" started-at="2015-02-17T00:43:10Z" finished-at="2015-02-17T00:43:24Z">
-      <class name="com.baird.bairdWarnerMainTests.BaseTest">
-        <test-method status="PASS" signature="setUpBeforeTestClass()[pri:0, instance:com.baird.bairdWarnerMainTests.BaseTest@66d33a]" name="setUpBeforeTestClass" is-config="true" duration-ms="5562" started-at="2015-02-16T17:43:10Z" finished-at="2015-02-16T17:43:16Z">
+    <test name="Default test" duration-ms="21486" started-at="2015-02-21T07:44:39Z" finished-at="2015-02-21T07:45:00Z">
+      <class name="com.baird.bairdWarnerMainTests.BairdSauceTest">
+        <test-method status="PASS" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.baird.bairdWarnerMainTests.BairdSauceTest@1a407d53]" name="setupTest" is-config="true" duration-ms="14165" started-at="2015-02-21T00:44:39Z" finished-at="2015-02-21T00:44:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.baird.bairdWarnerMainTests.BairdSauceTest.test_Account_Login_Page_Appear_Correct() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpBeforeTestClass -->
-        <test-method status="PASS" signature="test_Account_Login_Page_Appear_Correct()[pri:0, instance:com.baird.bairdWarnerMainTests.BaseTest@66d33a]" name="test_Account_Login_Page_Appear_Correct" duration-ms="7262" started-at="2015-02-16T17:43:16Z" finished-at="2015-02-16T17:43:23Z">
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="test_Account_Login_Page_Appear_Correct()[pri:0, instance:com.baird.bairdWarnerMainTests.BairdSauceTest@1a407d53]" name="test_Account_Login_Page_Appear_Correct" duration-ms="6906" started-at="2015-02-21T00:44:53Z" finished-at="2015-02-21T00:45:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_Account_Login_Page_Appear_Correct -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.baird.bairdWarnerMainTests.BaseTest@66d33a]" name="tearDown" is-config="true" duration-ms="350" started-at="2015-02-16T17:43:23Z" finished-at="2015-02-16T17:43:24Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.baird.bairdWarnerMainTests.BairdSauceTest@1a407d53]" name="tearDown" is-config="true" duration-ms="402" started-at="2015-02-21T00:45:00Z" finished-at="2015-02-21T00:45:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.baird.bairdWarnerMainTests.BaseTest -->
+      </class> <!-- com.baird.bairdWarnerMainTests.BairdSauceTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
