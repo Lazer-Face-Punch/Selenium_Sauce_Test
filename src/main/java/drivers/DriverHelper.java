@@ -31,7 +31,7 @@ public class DriverHelper {
 
     public static WebDriver getRemoteWebDriver(Method testName,
                                                SauceOnDemandAuthentication authentication, String browserAndOs) throws MalformedURLException {
-    	DesiredCapabilities capability = setBrowserAndOs(browserAndOs);
+    	DesiredCapabilities capability = setBrowserAndOs("FF15XP");
     	capability.setCapability("name", testName.getName());
         return new RemoteWebDriver(
                 new URL("http://" + authentication.getUsername() + ":" + authentication.getAccessKey() + "@ondemand.saucelabs.com:80/wd/hub"),

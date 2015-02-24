@@ -7,6 +7,7 @@
         <methods>
           <include name="test_Account_Login_Page_Appear_Correct"/>
           <include name="setupTest"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.baird.bairdWarnerMainTests.BairdSauceTest -->
     </classes>

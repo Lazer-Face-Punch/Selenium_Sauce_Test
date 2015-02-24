@@ -11,12 +11,12 @@ import utilities.TestProperties;
 import utilities.TestSessionHelper;
 import utilities.TestSessionInformation;
 
-import com.baird.pageObject.SauceAccountLoginTest;
 import com.saucelabs.common.SauceOnDemandAuthentication;
 import com.saucelabs.common.SauceOnDemandSessionIdProvider;
+import com.saucelabs.testng.SauceOnDemandAuthenticationProvider;
 
-
-public abstract class SauceSuper implements SauceOnDemandSessionIdProvider {
+/*@Listeners ({SauceOnDemandTestListener.class})*/
+public abstract class SauceSuper implements SauceOnDemandSessionIdProvider, SauceOnDemandAuthenticationProvider {
 	protected WebDriver driver;
 	protected SauceAccountLoginTest objLogin;
 	
@@ -41,13 +41,18 @@ public abstract class SauceSuper implements SauceOnDemandSessionIdProvider {
 	        sessionId = testSessionInformation.getSessionId();
 	        driver = testSessionInformation.getDriver();
 	        testProperties = testSessionInformation.getTestProperties();
-	        driver.get(this.testProperties.getDomain() + "/");
+	        driver.get(this.testProperties.getDomain() + "/trdt");
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	    }
 		
 	    @AfterMethod
 	    public void tearDown() throws Exception {
 	    	driver.quit();
+	    }
+	    
+	    
+	    public SauceOnDemandAuthentication getAuthentication(){
+	    	return authentication;
 	    }
 	}
 

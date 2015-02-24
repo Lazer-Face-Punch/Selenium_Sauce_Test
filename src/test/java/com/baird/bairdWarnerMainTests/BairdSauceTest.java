@@ -1,16 +1,16 @@
 package com.baird.bairdWarnerMainTests;
 
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.baird.pageObject.SauceAccountLoginTest;
 import com.baird.pageObject.SauceSuper;
+import com.saucelabs.common.SauceOnDemandAuthentication;
+import com.saucelabs.testng.SauceOnDemandTestListener;
 
 
-
+@Listeners ({SauceOnDemandTestListener.class})
  public class BairdSauceTest extends SauceSuper{
 		/* WebDriver driver; 
 		 SauceAccountLoginTest objLogin;*/ 

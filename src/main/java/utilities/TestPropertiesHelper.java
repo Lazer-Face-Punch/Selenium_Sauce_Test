@@ -16,4 +16,8 @@ public class TestPropertiesHelper {
     public static boolean testOnSauce(Properties properties) {
         return Boolean.valueOf(properties.getProperty("run.on.sauce"));
     }
+    
+    public static boolean browserAndOs (Properties properties) {
+    	return Boolean.valueOf(properties.getProperty("browserAndOs"));
+    }
 }
