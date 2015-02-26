@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>selenium-baird</name>
+=======
+	<name>BairdWarnerFramework</name>
+>>>>>>> e9c479ce0d1814e156e72464a65672a87df762f8
 	<comment></comment>
 	<projects>
 	</projects>
@@ -17,7 +21,12 @@
 		</buildCommand>
 	</buildSpec>
 	<natures>
+<<<<<<< HEAD
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
+=======
+		<nature>org.eclipse.m2e.core.maven2Nature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+>>>>>>> e9c479ce0d1814e156e72464a65672a87df762f8
 	</natures>
 </projectDescription>

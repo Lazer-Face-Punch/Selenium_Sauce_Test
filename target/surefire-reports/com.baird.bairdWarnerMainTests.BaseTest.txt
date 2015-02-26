@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.baird.bairdWarnerMainTests.BaseTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 7.704 sec <<< FAILURE!
+test_Account_Login_Page_Appear_Correct(com.baird.bairdWarnerMainTests.BaseTest)  Time elapsed: 1.997 sec  <<< FAILURE!
+java.lang.ClassCastException: org.openqa.selenium.By$ByClassName cannot be cast to org.openqa.selenium.WebElement
+	at com.baird.pageObject.AccountLoginTest.getLoginWelcome(AccountLoginTest.java:66)
+	at com.baird.bairdWarnerMainTests.BaseTest.test_Account_Login_Page_Appear_Correct(BaseTest.java:25)

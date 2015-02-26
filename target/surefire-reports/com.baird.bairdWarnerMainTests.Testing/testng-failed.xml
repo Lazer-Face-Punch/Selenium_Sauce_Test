@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [com.baird.bairdWarnerMainTests.Testing]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.baird.bairdWarnerMainTests.Testing">
+        <methods>
+          <include name="setUp"/>
+          <include name="closebrowser"/>
+          <include name="test_Account_Login_Page_Appear_Correct"/>
+        </methods>
+      </class> <!-- com.baird.bairdWarnerMainTests.Testing -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [com.baird.bairdWarnerMainTests.Testing] -->

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="os" value="Windows 7"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="browserVersion" value="32.0"/>
+  <parameter name="key" value="7e9aec3a-a1be-4ddc-89be-98f984145ea5"/>
+  <parameter name="username" value="Lazerfacepunch"/>
+  <listeners>
+    <listener class-name="com.saucelabs.testng.SauceOnDemandTestListener"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.baird.bairdWarnerMainTests.BaseTest">
+        <methods>
+          <include name="test_Account_Login_Page_Appear_Correct"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.baird.bairdWarnerMainTests.BaseTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
